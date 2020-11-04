@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  #alert{
+    border:1px solid black;
+    background-color: rgb(196, 238, 212);
+    padding:10px;
+    position:relative;
+    font-size:11px;
+    color:green;
+    border-radius: 5px;
+  }
+  #alert a{
+    font-size:20px;
+    padding:5px;
+    color:green;
+  }
+  .close{
+    position:absolute;
+    font-size:11px;
+    background-color: transparent;
+    font-size:12px;
+      position: absolute;
+      right: 25px;
+      top: 0;
+      cursor:pointer
+  }
+  #alert a:hover{
+    color:rgb(0, 0, 0);
+  }
+
+ 
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12.5px;
+    margin:0;
+  }
+  
+  /* Style the header */
+  header {
+    padding: 0px;
+    color: white;
+    border-bottom:1px solid black;
+    text-align:center;
+  }
+
+  
+  @media(max-width:1200px){
+    #logo{
+      text-align: center;
+    }
+  }
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 15%;
+    background-color: rgb(46, 43, 43);
+    height:100%;
+    position:fixed;
+    top:0;
+    
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align:center;
+    margin:0;
+  }
+  
+  nav ul li{
+     padding:24px;
+     width:100%;
+     cursor: pointer;
+  }
+  
+
+  nav ul li:hover{
+    background-color:rgb(156, 153, 153);
+}
+  nav ul li a:active{
+    background-color:#ccc;
+  }
+
+  nav ul li a{
+      text-decoration: none;
+      color:white;
+  }
+
+  article {
+    margin-left:160px;
+    float: right;
+    width: 85%;
+    text-align:center;
+    background-color: white;
+    padding:10px;
+
+  }
+
+  #backnav{
+    background-color: white;
+    padding:10px;
+    text-decoration: none;
+    color:black;
+    width:10%;
+
+  }
+
+
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 850px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+      position:initial;
+    }
+  }
+
+
+  /* NEWSSS */
+
+
+  /* Float four columns side by side */
+.columnb {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(210, 230, 230);
+  border:1px solid rgb(85, 113, 129);
+  color: black;
+}
+
+.fa {font-size:70px;}
+
+#chart-container {
+  width: 100%;
+  height: auto;
+}
+
+/* COLECTII */
+
+table{
+  background-color: rgb(218, 218, 218,0.2);
+  text-align: center;
+  font-size:12.5px;
+}
+form{
+  text-align:center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+  font-weight: 500;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align:center;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: rgb(11, 12, 14);
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    width:100%;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+
+
+
+.add{
+  background-color: none;
+  width:100%;
+  padding:20px;
+  cursor: pointer;
+  font-weight: 600;
+
+}
+.title h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:13px;
+  letter-spacing: 2px;
+  padding:15px;
+  margin-bottom:30px;
+  border-bottom: 1px solid black;
+}
+
+
+
+#hide{
+display: none;
+padding:50px;
+}
+
+/* UPDATE */
+.back{
+  float:left;
+  padding:10px 60px;
+  background-color: rgb(48, 43, 43);
+  color:white;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+.update{
+  margin:120px;
+  margin-top:0px;
+  padding:30px;
+}
+@media(max-width:1000px){
+  .update{
+    margin:20px;
+  }
+}
+
+form label {
+  font-weight: 500;
+}
+input[type=datetime],input[type=number], input[type=file]:not(.diff),input[type=text]:not(.diff), textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+}
+input[type=submit]:not(.dif) {
+  width: 100%;
+  background-color: rgb(72, 92, 146);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #657c9b;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/*-----------------------PRODUCTS---------------------------->*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media(max-width:850px){
+  .column{
+    width:100%;
+  }
+}
+/* Custom select */
+
+.custom-selectt {
+	position: relative;
+	font-family: Arial;
+	width:100%;
+	font-size: 12px;
+  font-weight: bold;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+
+  }
+  
+  .custom-selectt select {
+	display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+	background-color: white;
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transblparent;
+	border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+	border-color: transparent transparent #fff transparent;
+	top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+	padding: 8px 0px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+	user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+	position: absolute;
+	background-color:white ;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+	display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /* ----------------------------------PROGRAMARI------------------------------ */
+
+.columna{
+
+    float: left;
+    width: 33.3%;
+    padding: 0 5px;
+  }
+
+@media(max-width:850px){
+  .columna{
+    width:100%;
+    padding:5px;
+  }
+}
+
+
+@media(max-width:850px){
+  .orar{
+    padding:5px 50px;
+  }
+}
+
+.title2{
+  font-size:11px;
+  margin-top:100px;
+}
+
+.dif{
+  margin-top:30px; 
+  padding:5px 55px;
+  background-color:rgb(72, 92, 146);
+  color:white;
+  border:none;
+}
+
+/*---------------------------CLIENTI---------------*/
+
+.column .c{
+  width:50%;
+}
+
+/*---------------------------Admin---------------*/
+
+.news{
+    border:1px solid rgb(101, 107, 109);
+    position:relative;
+    background-color:rgba(232, 236, 236, 0.8);
+    border-radius: 2px;
+    margin:10px;
+    letter-spacing: 1px;
+    cursor:pointer;
+  }
+  .news p{
+    text-decoration: none;
+    color:black;
+  }
+  
+/*-----------------------------COURSES----------------*/
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+}
+
+
+.responsive.courses{
+	width:33.3%;
+	padding:20px;
+  height:auto;
+  float:left;
+}
+
+
+@media (max-width:1000px){
+  .responsive.courses{
+    width:100%;
+  }
+}
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
